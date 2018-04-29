@@ -1,0 +1,20 @@
+create test Git bash on SuperMac
+directory /users/DJM/Programming/git/0mainopenSAP_repo
+
+setup git config with username and email
+git config --global user.name "Douglas Maltby"
+git config --global user.email "doug.maltby (at) somewhere.com" (use real email address)
+
+create test_git_bash_Mac.txt file
+echo "Test git bash" > test_git_bash_Mac.txt
+cat test_git_bash_Mac.txt (this file)
+
+git status (untracked file in working dir)
+git add test_git_bash_Mac.txt (add test.txt for trackinga)
+git status (tracked but uncommitted)
+git commit -m "adding test_git_bash_Mac.txt file to repo from bash git"
+git status (committed to local repo but not in github
+git push origin master (prompt for un/pw)
+git status (committed and pushed to github repository)
+
+check https://github.com/douglasmaltby/0mainopenSAP_repo
